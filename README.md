@@ -1,5 +1,5 @@
 <p align="center" >
-  <img src="https://raw.github.com/AFNetworking/AFNetworking/assets/afnetworking-logo.png" alt="AFNetworking" title="AFNetworking">
+  <img src="https://raw.githubusercontent.com/ezefranca/Hackathon-3-CJE/master/others/logo.png" alt="Hackathon" title="Hackathon">
 </p>
 
 [![Build Status](https://travis-ci.org/AFNetworking/AFNetworking.svg)](https://travis-ci.org/AFNetworking/AFNetworking)
