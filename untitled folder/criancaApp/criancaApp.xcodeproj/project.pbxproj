@@ -28,6 +28,7 @@
 		F74A310F19CE405B00356C76 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A310919CE405B00356C76 /* Reachability.m */; };
 		F74A311019CE405B00356C76 /* webService.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A310B19CE405B00356C76 /* webService.m */; };
 		F74A311219CE407400356C76 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74A311119CE407400356C76 /* CoreBluetooth.framework */; };
+		F74A311419CE426E00356C76 /* libbluekitBLE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F74A311319CE426E00356C76 /* libbluekitBLE.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		F74A310A19CE405B00356C76 /* webService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webService.h; sourceTree = "<group>"; };
 		F74A310B19CE405B00356C76 /* webService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webService.m; sourceTree = "<group>"; };
 		F74A311119CE407400356C76 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		F74A311319CE426E00356C76 /* libbluekitBLE.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbluekitBLE.a; path = criancaApp/Classes/Bluetooth/libbluekitBLE.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74A311419CE426E00356C76 /* libbluekitBLE.a in Frameworks */,
 				F74A311219CE407400356C76 /* CoreBluetooth.framework in Frameworks */,
 				F74A30C919CE3F5B00356C76 /* CoreGraphics.framework in Frameworks */,
 				F74A30CB19CE3F5B00356C76 /* UIKit.framework in Frameworks */,
@@ -123,6 +126,7 @@
 		F74A30C519CE3F5B00356C76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F74A311319CE426E00356C76 /* libbluekitBLE.a */,
 				F74A311119CE407400356C76 /* CoreBluetooth.framework */,
 				F74A30C619CE3F5B00356C76 /* Foundation.framework */,
 				F74A30C819CE3F5B00356C76 /* CoreGraphics.framework */,
@@ -447,6 +451,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "criancaApp/criancaApp-Prefix.pch";
 				INFOPLIST_FILE = "criancaApp/criancaApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/criancaApp/Classes/Bluetooth",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -460,6 +468,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "criancaApp/criancaApp-Prefix.pch";
 				INFOPLIST_FILE = "criancaApp/criancaApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/criancaApp/Classes/Bluetooth",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -17,7 +17,7 @@
 #define rgb(r, g, b)  [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:1.0]
 
 
-@interface BluetoothViewController : UIViewController<UITextFieldDelegate,blueKitBLEDelegate>
+@interface BluetoothViewController : UIViewController<UITextFieldDelegate, blueKitBLEDelegate>
 {
     bluekitBle *t;
     Boolean isConnect;
@@ -25,10 +25,9 @@
 @property (strong, nonatomic) NSString *UUID;
 @property (strong, nonatomic) CBPeripheral *gConDev;
 @property (weak, nonatomic) IBOutlet UISlider *gBle_LED_RSlider;
-
 @property (weak, nonatomic) IBOutlet UISlider *gBle_LED_GSlider;
-
 @property (weak, nonatomic) IBOutlet UISlider *gBle_LED_BSlider;
+- (IBAction)doLedSliderChanged:(id)sender;
 
 
 @end
