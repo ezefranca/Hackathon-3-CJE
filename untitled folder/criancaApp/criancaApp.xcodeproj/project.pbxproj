@@ -22,6 +22,12 @@
 		F74A30EB19CE3F5B00356C76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74A30CA19CE3F5B00356C76 /* UIKit.framework */; };
 		F74A30F319CE3F5B00356C76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F74A30F119CE3F5B00356C76 /* InfoPlist.strings */; };
 		F74A30F519CE3F5B00356C76 /* criancaAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A30F419CE3F5B00356C76 /* criancaAppTests.m */; };
+		F74A310C19CE405B00356C76 /* BluetoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A30FE19CE405B00356C76 /* BluetoothViewController.m */; };
+		F74A310D19CE405B00356C76 /* CNBluetoothCentral.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A310519CE405B00356C76 /* CNBluetoothCentral.m */; };
+		F74A310E19CE405B00356C76 /* CoinBLEDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F74A310619CE405B00356C76 /* CoinBLEDemo-Info.plist */; };
+		F74A310F19CE405B00356C76 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A310919CE405B00356C76 /* Reachability.m */; };
+		F74A311019CE405B00356C76 /* webService.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A310B19CE405B00356C76 /* webService.m */; };
+		F74A311219CE407400356C76 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74A311119CE407400356C76 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,19 @@
 		F74A30F019CE3F5B00356C76 /* criancaAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "criancaAppTests-Info.plist"; sourceTree = "<group>"; };
 		F74A30F219CE3F5B00356C76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F74A30F419CE3F5B00356C76 /* criancaAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = criancaAppTests.m; sourceTree = "<group>"; };
+		F74A30FE19CE405B00356C76 /* BluetoothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothViewController.m; sourceTree = "<group>"; };
+		F74A30FF19CE405B00356C76 /* BluetoothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothViewController.h; sourceTree = "<group>"; };
+		F74A310219CE405B00356C76 /* bluekitBle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bluekitBle.h; sourceTree = "<group>"; };
+		F74A310319CE405B00356C76 /* blueKitDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blueKitDef.h; sourceTree = "<group>"; };
+		F74A310419CE405B00356C76 /* CNBluetoothCentral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNBluetoothCentral.h; sourceTree = "<group>"; };
+		F74A310519CE405B00356C76 /* CNBluetoothCentral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNBluetoothCentral.m; sourceTree = "<group>"; };
+		F74A310619CE405B00356C76 /* CoinBLEDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CoinBLEDemo-Info.plist"; sourceTree = "<group>"; };
+		F74A310719CE405B00356C76 /* CoinBLEDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoinBLEDemo-Prefix.pch"; sourceTree = "<group>"; };
+		F74A310819CE405B00356C76 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		F74A310919CE405B00356C76 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		F74A310A19CE405B00356C76 /* webService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webService.h; sourceTree = "<group>"; };
+		F74A310B19CE405B00356C76 /* webService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webService.m; sourceTree = "<group>"; };
+		F74A311119CE407400356C76 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74A311219CE407400356C76 /* CoreBluetooth.framework in Frameworks */,
 				F74A30C919CE3F5B00356C76 /* CoreGraphics.framework in Frameworks */,
 				F74A30CB19CE3F5B00356C76 /* UIKit.framework in Frameworks */,
 				F74A30C719CE3F5B00356C76 /* Foundation.framework in Frameworks */,
@@ -103,6 +123,7 @@
 		F74A30C519CE3F5B00356C76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F74A311119CE407400356C76 /* CoreBluetooth.framework */,
 				F74A30C619CE3F5B00356C76 /* Foundation.framework */,
 				F74A30C819CE3F5B00356C76 /* CoreGraphics.framework */,
 				F74A30CA19CE3F5B00356C76 /* UIKit.framework */,
@@ -114,10 +135,13 @@
 		F74A30CC19CE3F5B00356C76 /* criancaApp */ = {
 			isa = PBXGroup;
 			children = (
+				F74A310019CE405B00356C76 /* Classes */,
 				F74A30D519CE3F5B00356C76 /* AppDelegate.h */,
 				F74A30D619CE3F5B00356C76 /* AppDelegate.m */,
 				F74A30D819CE3F5B00356C76 /* Main_iPhone.storyboard */,
 				F74A30DB19CE3F5B00356C76 /* Main_iPad.storyboard */,
+				F74A30FE19CE405B00356C76 /* BluetoothViewController.m */,
+				F74A30FF19CE405B00356C76 /* BluetoothViewController.h */,
 				F74A30DE19CE3F5B00356C76 /* ViewController.h */,
 				F74A30DF19CE3F5B00356C76 /* ViewController.m */,
 				F74A30E119CE3F5B00356C76 /* Images.xcassets */,
@@ -153,6 +177,31 @@
 				F74A30F119CE3F5B00356C76 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F74A310019CE405B00356C76 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F74A310119CE405B00356C76 /* Bluetooth */,
+				F74A310819CE405B00356C76 /* Reachability.h */,
+				F74A310919CE405B00356C76 /* Reachability.m */,
+				F74A310A19CE405B00356C76 /* webService.h */,
+				F74A310B19CE405B00356C76 /* webService.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F74A310119CE405B00356C76 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				F74A310219CE405B00356C76 /* bluekitBle.h */,
+				F74A310319CE405B00356C76 /* blueKitDef.h */,
+				F74A310419CE405B00356C76 /* CNBluetoothCentral.h */,
+				F74A310519CE405B00356C76 /* CNBluetoothCentral.m */,
+				F74A310619CE405B00356C76 /* CoinBLEDemo-Info.plist */,
+				F74A310719CE405B00356C76 /* CoinBLEDemo-Prefix.pch */,
+			);
+			path = Bluetooth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74A310E19CE405B00356C76 /* CoinBLEDemo-Info.plist in Resources */,
 				F74A30DD19CE3F5B00356C76 /* Main_iPad.storyboard in Resources */,
 				F74A30E219CE3F5B00356C76 /* Images.xcassets in Resources */,
 				F74A30DA19CE3F5B00356C76 /* Main_iPhone.storyboard in Resources */,
@@ -254,7 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F74A30E019CE3F5B00356C76 /* ViewController.m in Sources */,
+				F74A310D19CE405B00356C76 /* CNBluetoothCentral.m in Sources */,
+				F74A311019CE405B00356C76 /* webService.m in Sources */,
+				F74A310C19CE405B00356C76 /* BluetoothViewController.m in Sources */,
 				F74A30D719CE3F5B00356C76 /* AppDelegate.m in Sources */,
+				F74A310F19CE405B00356C76 /* Reachability.m in Sources */,
 				F74A30D319CE3F5B00356C76 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
